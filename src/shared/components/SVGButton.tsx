@@ -6,6 +6,7 @@ import PlayCircle from "../icons/PlayCircle";
 import StopCircle from "../icons/StopCircle";
 import PlusCircle from "../icons/PlusCircle";
 import MinusCircle from "../icons/MinusCircle";
+import PauseCircle from "../icons/PauseCircle";
 
 const SVGButton = ({
   children,
@@ -19,6 +20,13 @@ const SVGButton = ({
       case "play-circle":
         return (
           <PlayCircle
+            className="w-10 h-10"
+            type={isHover ? "solid" : "outline"}
+          />
+        );
+      case "pause-circle":
+        return (
+          <PauseCircle
             className="w-10 h-10"
             type={isHover ? "solid" : "outline"}
           />

@@ -5,6 +5,7 @@ specifiers:
   '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
   autoprefixer: 10.4.14
+  dayjs: ^1.11.9
   eslint: 8.44.0
   eslint-config-next: 13.4.7
   next: 13.4.7
@@ -19,6 +20,7 @@ dependencies:
   '@types/react': 18.2.14
   '@types/react-dom': 18.2.6
   autoprefixer: 10.4.14_postcss@8.4.24
+  dayjs: 1.11.9
   eslint: 8.44.0
   eslint-config-next: 13.4.7_iqf7tbmerllfqanu4l3d6aqdn4
   next: 13.4.7_biqbaboplfbrettd7655fr4n2y
@@ -663,6 +665,10 @@ packages:
 
   /damerau-levenshtein/1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
+    dev: false
+
+  /dayjs/1.11.9:
+    resolution: {integrity: sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==}
     dev: false
 
   /debug/3.2.7:
