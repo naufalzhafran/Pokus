@@ -6,10 +6,12 @@ const Page = () => {
     <main className="flex min-h-screen flex-col items-center justify-center">
       <div className="flex flex-col align-center-justify-center">
         <PomodoroTimer />
-        {/* <TodoList/> */}
+        <TodoList/>
       </div>
     </main>
   );
 };
 
 export default Page;
+
+

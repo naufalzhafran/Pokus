@@ -8,6 +8,7 @@ import {
   PlusCircle,
   MinusCircle,
   PauseCircle,
+  XMark,
 } from "../../icons";
 
 type SVGButtonPropsType = ComponentPropsWithoutRef<"button"> & { icon: string };
@@ -51,6 +52,10 @@ const SVGButton = ({ children, icon, ...props }: SVGButtonPropsType) => {
             className="w-10 h-10"
             type={isHover ? "solid" : "outline"}
           />
+        );
+      case "x-mark":
+        return (
+          <XMark className="w-10 h-10" type={isHover ? "solid" : "outline"} />
         );
 
       default:
