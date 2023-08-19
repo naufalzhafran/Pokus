@@ -1,13 +1,10 @@
-import Main from "../features/Main";
+import { MainPage } from "../features/Main";
 
 export const metadata = {
-    title: 'Pokus App',
-    description: 'Productivity Support Application',
-}
+  title: "Pokus App",
+  description: "Productivity Support Application",
+};
 
 export default function Home() {
-
-    return (
-        <Main/>
-    )
+  return <MainPage />;
 }

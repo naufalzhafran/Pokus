@@ -1,18 +1,18 @@
 "use client";
 
 import { ComponentPropsWithoutRef } from "react";
-import useHover from "../hooks/useHover";
-import PlayCircle from "../icons/PlayCircle";
-import StopCircle from "../icons/StopCircle";
-import PlusCircle from "../icons/PlusCircle";
-import MinusCircle from "../icons/MinusCircle";
-import PauseCircle from "../icons/PauseCircle";
+import { useHover } from "../../hooks";
+import {
+  PlayCircle,
+  StopCircle,
+  PlusCircle,
+  MinusCircle,
+  PauseCircle,
+} from "../../icons";
 
-const SVGButton = ({
-  children,
-  icon,
-  ...props
-}: ComponentPropsWithoutRef<"button"> & { icon: string }) => {
+type SVGButtonPropsType = ComponentPropsWithoutRef<"button"> & { icon: string };
+
+const SVGButton = ({ children, icon, ...props }: SVGButtonPropsType) => {
   const { ref, isHover } = useHover();
 
   const renderIcon = () => {

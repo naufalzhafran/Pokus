@@ -1,6 +1,6 @@
 "use client";
 
-import useInterval from "@/shared/hooks/useInterval";
+import { useInterval } from "@/shared/hooks";
 import dayjs, { Dayjs } from "dayjs";
 import { useState } from "react";
 

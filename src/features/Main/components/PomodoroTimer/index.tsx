@@ -1,6 +1,6 @@
 "use client";
 
-import SVGButton from "@/shared/components/SVGButton";
+import { SVGButton } from "@/shared/components";
 import usePomodoroTimer from "./usePomodoroTimer";
 import { addZeroPadding } from "@/shared/functions/format";
 
