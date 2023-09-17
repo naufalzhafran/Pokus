@@ -4,7 +4,7 @@ import TodoList from "@/features/Main/components/TodoList";
 const Page = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center">
-      <div className="flex flex-col align-center-justify-center">
+      <div className="flex flex-col items-center">
         <PomodoroTimer />
         <TodoList/>
       </div>
