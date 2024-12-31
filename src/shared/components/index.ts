@@ -1,1 +1,0 @@
-export { SVGButton } from "./SVGButton";
