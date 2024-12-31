@@ -17,7 +17,7 @@ const Timer = () => {
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
-    let interval: any = null;
+    let interval: string | number | NodeJS.Timeout | undefined;
 
     if (isRunning) {
       interval = setInterval(() => {
