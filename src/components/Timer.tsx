@@ -17,6 +17,14 @@ const Timer = () => {
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
+    if (isRunning) {
+      document.title = `[${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}] - Pokus`;
+    } else {
+      document.title = `Pokus - Simple & Light Pomodoro Timer`;
+    }
+  }, [isRunning, minutes, seconds]);
+
+  useEffect(() => {
     let interval: string | number | NodeJS.Timeout | undefined;
 
     if (isRunning) {
@@ -53,9 +61,8 @@ const Timer = () => {
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-fit h-fit">
         <div
-          className={`transition-opacity duration-100 flex justify-center mb-4 gap-2 ${
-            isRunning ? "opacity-0" : ""
-          }`}
+          className={`transition-opacity duration-100 flex justify-center mb-4 gap-2 ${isRunning ? "opacity-0" : ""
+            }`}
         >
           <Button onClick={handlePlus}>
             <PlusIcon />
@@ -69,9 +76,8 @@ const Timer = () => {
         </div>
 
         <div
-          className={`transition font-semibold flex flex-col ${
-            isRunning ? "-translate-y-8  text-[9rem] leading-none" : "text-9xl"
-          }`}
+          className={`transition font-semibold flex flex-col ${isRunning ? "-translate-y-8  text-[9rem] leading-none" : "text-9xl"
+            }`}
         >
           <span className="text-center">
             {String(minutes).padStart(2, "0")}
